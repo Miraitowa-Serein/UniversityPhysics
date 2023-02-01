@@ -1,19 +1,22 @@
 \PassOptionsToPackage{quiet}{xeCJK}
 \documentclass[12pt, a4paper, twoside]{ctexbook}
-\usepackage{amsmath, amsthm, amssymb, bm, graphicx, hyperref, mathrsfs, geometry, booktabs, makecell, mathcomp, esint, upgreek}
-\usepackage{mwe,color,float,cleveref,hyperref}
-\usepackage{booktabs,tabularx,multirow,makecell,array,caption}
+\usepackage{amsmath,amsthm,amssymb,bm,graphicx,hyperref,mathrsfs,geometry,booktabs,makecell,mathcomp,esint,upgreek}
+\usepackage{mwe,color,float,cleveref}
+\usepackage{tabularx,multirow,array,caption}
 \usepackage[T1]{fontenc}
+
 \extrafloats{150}
 \graphicspath{{Figures/}}
 \hypersetup{colorlinks=true, linkcolor=black}
-
 \geometry{left=2.0cm, top=2.0cm, bottom=2.0cm, right=2.0cm}
 
 \title{{\Huge{\textbf{物理学及其工程应用笔记}}}}
 \author{南京工程学院\\Serein}
 \date{\today}
+
 \linespread{1.5}
+\newCJKfontfamily\sonti{FandolSong-Bold}
+
 \newtheorem{theorem}{定理}[section]
 \newtheorem{definition}[theorem]{定义}
 \newtheorem{lemma}[theorem]{引理}
@@ -21,7 +24,7 @@
 \newtheorem{example}[theorem]{例}
 \newtheorem{proposition}[theorem]{命题}
 
-\captionsetup{format=hang}% 设置浮动体标题悬挂缩进
+\captionsetup{format=hang}
 \DeclareCaptionLabelSeparator*{sspace}{\ \ }
 \captionsetup[figure]{labelsep=sspace}
 \captionsetup[table]{labelsep=sspace}
@@ -29,13 +32,11 @@
 \DeclareCaptionFont{5hao}{\zihao{5}}
 \captionsetup{labelfont={heiti,5hao},textfont={heiti,5hao}}
 
-\newCJKfontfamily\sonti{FandolSong-Bold}
-
 \crefname{figure}{图}{图}
 \crefname{table}{表}{表}
 \crefname{equation}{式}{式}
-\hypersetup{breaklinks,colorlinks}% 允许超链接断行,取消超链接的边框,使链接文字带颜色
-\hypersetup{hidelinks,bookmarksnumbered=true,bookmarksopen=true,pdfstartview=Fit}% 取消超链接的颜色，书签目录增加编号
+\hypersetup{breaklinks,colorlinks}
+\hypersetup{hidelinks,bookmarksnumbered=true,bookmarksopen=true,pdfstartview=Fit}
 
 \everymath{\displaystyle}
 
