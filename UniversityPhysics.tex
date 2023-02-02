@@ -145,7 +145,7 @@ $$
 
 特殊地，在圆周运动中，法向加速度为
 $$
-a_\mathrm{n}=\frac{v^2}{\rho}=\frac{v^2}{R}=w^2R
+a_\mathrm{n}=\frac{v^2}{\rho}=\frac{v^2}{R}=\omega^2R
 $$
 
 \section{典型例题}
@@ -291,12 +291,12 @@ $$
 $$
 \boldsymbol{\omega}=\frac{\mathrm{d}\boldsymbol{\theta}}{\mathrm{d}t}
 $$
+角速度方向满足右手定则
 
 {\sonti 角加速度}：
 $$
 \boldsymbol{\alpha}=\frac{\mathrm{d}\boldsymbol{\omega}}{\mathrm{d}t}= \frac{\mathrm{d}^2\boldsymbol{\theta}}{\mathrm{d}t^2}
 $$
-角速度方向满足右手定则
 
 {\sonti 角速度与线速度大小关系}：
 $$
@@ -316,7 +316,7 @@ $$
 
 特殊地，在圆周运动中，法向加速度为
 $$
-a_\mathrm{n}=\frac{v^2}{\rho}=\frac{v^2}{R}=w^2R
+a_\mathrm{n}=\frac{v^2}{\rho}=\frac{v^2}{R}=\omega^2R
 $$
 \section{转动定律}
 {\sonti 力矩}：
@@ -438,7 +438,7 @@ $$
     $$
 \end{example}
 \begin{example}
-    质量为$m_3$，半径为$R$的定滑轮（可视为质量均匀分布的圆盘），一根轻绳跨过定滑轮（轻绳不能伸长，绳与定滑轮之间无相对滑动，忽略定滑轮轴处的摩擦），绳的两端分别悬挂质量为$m_1$，$m_2$的物块，且$m_2>m_1$。求物块运动的加速度和轻绳的张力。
+    质量为$m_3$，半径为$R$的定滑轮，可视为质量均匀分布的圆盘，一根轻绳跨过定滑轮，轻绳不能伸长，绳与定滑轮之间无相对滑动，忽略定滑轮轴处的摩擦，绳的两端分别悬挂质量为$m_1$，$m_2$的物块，且$m_2>m_1$。求物块运动的加速度和轻绳的张力。
     \begin{figure}[H]
         \centerline{\includegraphics[scale=0.8]{CH03EX02.pdf}}
     \end{figure}
@@ -687,14 +687,14 @@ $$
 
 {\sonti 有刚体参与的碰撞}：通常利用系统角动量守恒求解
 \begin{example}
-    质量为$m$，长度为$2l$的均匀细棒，静止放置在光滑的水平面上，可以绕通过其中心的转轴转动。质量为$m_2$的小球以速度$v_0$垂直撞到棒的端点并反向弹回。设小球与棒作完全弹性碰撞，求碰撞后，小球的速度和棒的角速度。
+    质量为$m$，长度为$2l$的均匀细棒，静止放置在光滑的水平面上，可以绕通过其中心的转轴转动。质量为$m_2$的小球以速度$v_0$垂直撞到棒的端点并反向弹回。设小球与棒做完全弹性碰撞，求碰撞后，小球的速度和棒的角速度。
     
     \noindent\textbf{解}
     $$
     \left\{ \begin{array}{l}
 	m_2v_0l=-m_2vl+J\omega\\
 	\frac{1}{2}m_2v_{0}^{2}=\frac{1}{2}m_2v^2+\frac{1}{2}J\omega ^2\\
-	J=\frac{1}{12}m\left( 2l \right) ^2\\
+	J=\frac{1}{12}m_1\left( 2l \right) ^2\\
     \end{array}\Rightarrow \left\{ \begin{array}{l}
 	v=\frac{m_1-3m_2}{m_1+3m_2}v_0\\
 	\omega =\frac{6m_2}{\left( m_1+3m_2 \right) l}v_0\\
@@ -731,16 +731,16 @@ $$
 v=\frac{\mathrm{d}x}{\mathrm{d}t}=-A\omega\sin\left(\omega t+\varphi\right)
 $$
 
-令$t=0$，可得初速度$v_0=-A\omega\sin\varphi$。
+令$t=0$，可得初速度$v_0=-A\omega\sin\varphi$
 
-速度最大值为$v_{\max}=A\omega$
+速度最大值为$v_\mathrm{max}=A\omega$
 
 {\sonti 加速度}：
 $$
 a=\frac{\mathrm{d}v}{\mathrm{d}t}=\frac{\mathrm{d}^2x}{\mathrm{d}t^2}=-A\omega^2\cos\left(\omega t+\varphi\right)
 $$
 
-加速度最大值为$a_{\max}=A\omega^2$
+加速度最大值为$a_\mathrm{max}=A\omega^2$
 
 由
 $$
@@ -748,7 +748,7 @@ $$
 	x_0=A\cos \varphi\\
 	v_0=-A\omega \sin \varphi\\
 \end{array} \right. \Rightarrow \left\{ \begin{array}{l}
-	wx_0=A\omega \cos \varphi\\
+	\omega x_0=A\omega \cos \varphi\\
 	v_0=-A\omega \sin \varphi\\
 \end{array} \right. 
 $$
@@ -790,14 +790,14 @@ $$
 \newpage
 {\sonti 描述简谐振动的几个特征量}：
 \begin{itemize}
-    \item 幅度$A$，$\mathrm{m}$：$A=\sqrt{x_0^2+\left(\frac{v_0}{\omega}\right)}$
+    \item 振幅$A$，$\mathrm{m}$：$A=\sqrt{x_0^2+\left(\frac{v_0}{\omega}\right)^2}$
     \item 周期$T$，$\mathrm{s}$：$T=\frac{2\pi}{\omega}$
     \item 频率$\nu$，$\mathrm{Hz}$：$\nu=\frac{1}{T}=\frac{\omega}{2\pi}$
     \item 角频率$\omega$，$\mathrm{rad}\cdot\mathrm{s}^{-1}$：$\omega=2\pi\nu=\frac{2\pi}{T}$
     \item 相位：$\omega t+\varphi$，当$t=0$时，可得初相位为$\varphi$
 \end{itemize}
 
-{\sonti 几个关于周期的和结论}：
+{\sonti 弹簧振子、单摆、复摆周期的结论}：
 \begin{itemize}
     \item 弹簧振子：
     $$
@@ -822,16 +822,16 @@ $$
     其中$J$为绕转轴的转动惯量，$l$为质心到转轴的距离
 \end{itemize}
 \section{旋转矢量法}
-画出矢量圆，矢量端点$P$在$x$轴上的投影点作简谐运动，当圆上某一点在\uppercase\expandafter{\romannumeral1}，\uppercase\expandafter{\romannumeral2}象限时，该点速度$v<0$；当圆上某一点在\uppercase\expandafter{\romannumeral3}，\uppercase\expandafter{\romannumeral4}象限时，该点速度$v>0$
+画出矢量圆，矢量端点$P$在$x$轴上的投影点做简谐运动，当圆上某一点在第\uppercase\expandafter{\romannumeral1}，\uppercase\expandafter{\romannumeral2}象限时，该点速度$v<0$；当圆上某一点在第\uppercase\expandafter{\romannumeral3}，\uppercase\expandafter{\romannumeral4}象限时，该点速度$v>0$
 
 {\sonti 旋转矢量法的应用}：
 \begin{itemize}
-    \item 求初相位$\varphi$：绘制出矢量圆，依据$y-t$图像$x=0$处的斜率，得到该点$v$与$0$的关系，并依据该点位置，在矢量圆标出，即可求得初相位$\varphi$
+    \item 求初相位$\varphi$：绘制出矢量圆，依据$y-t$图像$x=0$处的斜率，得到该点$v$与$0$的关系，并依据该点位置，在矢量圆上标出，连接圆心，其与$x$轴正方向夹角即为初相位$\varphi$
     \item 求$\omega$：
     $$
     \Delta\varphi=\omega\Delta t
     $$
-    \item 求最短时间：
+    \item 求经历时间：
     $$
     \Delta\varphi=\omega\Delta t
     $$
@@ -847,7 +847,7 @@ $$
 
 {\sonti 弹簧振子的动能}：
 $$
-E_{\mathrm{k}}=\frac{1}{2}mv^2=\frac{1}{2}m\omega A^2\sin^2\left(\omega t+\varphi\right)
+E_{\mathrm{k}}=\frac{1}{2}mv^2=\frac{1}{2}m\omega^2 A^2\sin^2\left(\omega t+\varphi\right)
 $$
 
 {\sonti 弹簧振子的机械能}：
@@ -933,7 +933,7 @@ $$
 
 {\sonti 描述波动过程的几个特征量}：
 \begin{itemize}
-    \item 波长$\lambda$，$\mathrm{m}$：$\lambda=Tu=\frac{u}{v}$
+    \item 波长$\lambda$，$\mathrm{m}$：$\lambda=Tu=\frac{u}{\nu}$
     \item 周期$T$，$\mathrm{s}$：$T=\frac{1}{\nu}=\frac{\lambda}{u}$
     \item 波速$u$，$\mathrm{m}\cdot\mathrm{s}^{-1}$：$u=\frac{\lambda}{T}=\lambda\nu$
     \item 频率$\nu$，$\mathrm{Hz}$：$\nu=\frac{1}{T}$
@@ -941,27 +941,28 @@ $$
 
 周期与频率只决定于波源的振动；波速只决定于介质的性质，与振源无关
 
-\textbf{在均匀各向同性固体介质中}：
 \begin{itemize}
-    \item {\sonti 纵波波速}：
-    $$
-    u=\sqrt{\frac{E}{\rho}}
-    $$
-    其中$E$为介质的弹性模量，$\rho$为介质的密度
-    \item {\sonti 横波波速}：
-    $$
-    u=\sqrt{\frac{G}{\rho}}
-    $$
-    其中$G$为介质的切变模量
-\end{itemize}
-
-\textbf{在液体和气体中}：
-\begin{itemize}
-    \item {\sonti 纵波波速}：
-    $$
-    u=\sqrt{\frac{K}{\rho}}
-    $$
-    其中$K$为体积模量
+    \item {\sonti 在均匀各向同性固体介质中}：
+    \begin{itemize}
+        \item \textbf{纵波波速}：
+        $$
+        u=\sqrt{\frac{E}{\rho}}
+        $$
+        其中$E$为介质的弹性模量，$\rho$为介质的密度
+        \item \textbf{横波波速}：
+        $$
+        u=\sqrt{\frac{G}{\rho}}
+        $$
+        其中$G$为介质的切变模量
+    \end{itemize}
+    \item {\sonti 在液体和气体中}：
+    \begin{itemize}
+        \item \textbf{纵波波速}：
+        $$
+        u=\sqrt{\frac{K}{\rho}}
+        $$
+        其中$K$为体积模量
+    \end{itemize}
 \end{itemize}
 
 \textbf{横波不能在液体和气体中传播}
@@ -969,7 +970,7 @@ $$
 {\sonti 波线、波面、波前}：
 \begin{itemize}
     \item {\sonti 波线}：沿波的传播方向作一些带箭头的线
-    \item {\sonti 波面}：某时刻介质中各振动相位相同的点联结成的面
+    \item {\sonti 波面}：某时刻介质中各振动相位相同的点联结而成的面
     \item {\sonti 波前}：位于最前面的领先波面
 \end{itemize}
 
@@ -1056,23 +1057,23 @@ $$
 
 {\sonti 能流}：
 $$
-p=wuS
+p=wuSt
 $$
 其中$w$为单位体积中波的能量，$S$为均匀介质垂直于波速$u$的面积
 
 {\sonti 平均能流}：
 $$
-\overline{p}=\overline{w}uS
+\overline{p}=\overline{w}uSt
 $$
 
 {\sonti 能流密度}：
 $$
-I=\frac{\overline{p}}{S}=\overline{w}u=\frac{1}{2}\rho A^2 \omega^2 u
+I=\frac{\overline{p}}{St}=\overline{w}u=\frac{1}{2}\rho A^2 \omega^2 u
 $$
 其中$\rho$为介质密度，$A$为波的振幅，$\omega$为角频率，$u$为波速
 
 \section{波的衍射与干涉}
-{\sonti 明显衍射条件}：障碍物尺寸可与波长相比，甚至比波长更小
+{\sonti 明显衍射的条件}：障碍物尺寸可与波长相比，甚至比波长更小
 
 {\sonti 波的衍射}：波在传播中遇到障碍物，其传播方向发生改变，并可绕过障碍物而继续向前传播
 
@@ -1083,8 +1084,8 @@ $$
 
 不妨令$\Delta\varphi=\varphi_2-\varphi_1-2\pi\cdot\frac{r_2-r_1}{\lambda}$
 \begin{itemize}
-    \item 当$\Delta\varphi=2k\pi$时，振动加强，$A=A_1+A_2$
-    \item 当$\Delta\varphi=\left(2k+1\right)\pi$时，振动减弱，$A=\left|A_1-A_2\right|$
+    \item 当$\Delta\varphi=\pm2k\pi$时，振动加强，$A=A_1+A_2$
+    \item 当$\Delta\varphi=\pm\left(2k+1\right)\pi$时，振动减弱，$A=\left|A_1-A_2\right|$
 \end{itemize}
 
 记$\delta=r_2-r_1$为波程差，若当两列波初相位相同时，即$\varphi_1=\varphi_2$，则
@@ -1118,7 +1119,7 @@ $$
 
 在自由端反射时无半波损失，在固定端反射时有半波损失
 
-波从波疏介质入射到波密介质，反射时存在半波损失，从波密介质入射到波疏介质，反射时无半波损失
+波从波疏介质入射到波密介质，反射时存在半波损失；波从波密介质入射到波疏介质，反射时无半波损失
 
 当波从波疏介质入射到波密介质，被反射回波疏介质时，在反射处形成波节，相位有$\pi$的突变
 \section{多普勒效应}
@@ -1126,7 +1127,7 @@ $$
 $$
 \nu_0=\frac{u\pm v_0}{u\mp v_s}\nu_s
 $$
-其中$\nu_s$为波源频率。分子中“$+$”号适用于观察者靠近波源，“$-$”号适用于观察者远离波源；分母中“$+$”号适用于波源远离观察者，“$-$”号适用于波源靠近观察者。\textbf{因此}，\textbf{当波源与观察者靠近时}，$\nu_0$\textbf{会增大}
+其中$\nu_s$为波源频率。分子中“$+$”号适用于观察者靠近波源，“$-$”号适用于观察者远离波源；分母中“$+$”号适用于波源远离观察者，“$-$”号适用于波源靠近观察者。因此，\textbf{当波源与观察者靠近时}，$\nu_0$\textbf{会增大}
 \chapter{波动光学}
 \newpage
 \section{相干光}
@@ -1134,7 +1135,7 @@ $$
 
 原子发光不连续，即不同原子同时发出的光，以及用一个原子不同时刻发出的光，在叠加的时候都是独立的、不相干的
 
-获得相干光的方法有波阵面分割法以及振幅分割法
+获得相干光的方法有\textbf{波阵面分割法}以及\textbf{振幅分割法}
 \section{基本概念}
 {\sonti 光程}：定义为光在介质中传播的几何路程$r$与介质折射率$n$之积，即
 $$
@@ -1184,7 +1185,7 @@ $$
     1\,\upmu\mathrm{m}=10^{-6}\,\mathrm{m}
     $$
     $$
-    1\,\mathrm{nm}=10^{-9}\,\mathrm{m}
+    1\,\mathrm{nm}=10^{-9}\,\mathrm{m}=10\,\mathring{\mathrm{A}}
     $$
     \item 频率：
     $$
@@ -1239,7 +1240,7 @@ $$
 
 {\sonti 注意}：这里$\lambda$是指光在真空中的波长
 \begin{itemize}
-    \item {\sonti 杨氏双缝干涉}：杨氏双缝干涉实验是利用波阵面分割法来获得相干光的。用单色平行光照射一窄缝$S$，窄缝相当于一个线光源，$S$后放有与其平行且对称的两狭缝$S_1$与$S_2$，两缝之间距离$d$很小，两狭缝处在$S$发出光波的同一波阵面上，构成一对初相位相同的等强度的相干光源，在双缝的后面放置一个观察屏，可以在屏幕上观察到明暗相间的对称干涉条纹，这些条纹均与狭缝平行，条纹间距相等。设双缝之间的距离为$d$，双缝到屏的距离为$D$，如\textcolor{blue}{\cref{fig:杨氏双缝干涉}}所示。在屏上以屏中心为原点$O$，垂直于条纹方向建立$x$轴，用以表示干涉点的位置，设屏上坐标为$x$处的干涉点$P$到两缝的距离分别为$r_1$，$r_2$，且$D\gg x$，$D\gg d$
+    \item {\sonti 杨氏双缝干涉}：杨氏双缝干涉实验是利用波阵面分割法来获得相干光的。用单色平行光照射一窄缝$S$，窄缝相当于一个线光源，$S$后放有与其平行且对称的两狭缝$S_1$与$S_2$，两缝之间距离$d$很小，两狭缝处在$S$发出光波的同一波阵面上，构成一对初相位相同的等强度的相干光源，在双缝的后面放置一个观察屏，可以在屏幕上观察到明暗相间的对称干涉条纹，这些条纹均与狭缝平行，条纹间距相等。设双缝之间的距离为$d$，双缝平面到屏的距离为$D$，如\textcolor{blue}{\cref{fig:杨氏双缝干涉}}所示。在屏上以屏中心为原点$O$，垂直于条纹方向建立$x$轴，用以表示干涉点的位置，设屏上坐标为$x$处的干涉点$P$到两缝的距离分别为$r_1$，$r_2$，且$D\gg x$，$D\gg d$
     \begin{figure}[H]
         \centerline{\includegraphics[scale=0.88]{杨氏双缝干涉.pdf}}
         \caption{杨氏双缝干涉实验示意图}\label{fig:杨氏双缝干涉}
@@ -1268,7 +1269,7 @@ $$
     $k=0$对应于在点$O$处的零级明条纹，又称中央明纹。
     相邻明纹之间的距离，相邻暗纹之间的距离均为
     $$
-    \Delta_\text{明}=\Delta_\text{暗}=\frac{D}{d}\lambda
+    \Delta\text{Light}=\Delta\text{Dark}=\frac{D}{d}\lambda
     $$
     \item {\sonti 薄膜干涉}：薄膜干涉是利用振幅分割法来获得相干光的。薄膜干涉示意图如\textcolor{blue}{\cref{fig:薄膜干涉}}所示
     \begin{figure}[H]
@@ -1282,7 +1283,7 @@ $$
         \left( 2k-1 \right) \cdot \frac{\lambda}{2},\text{减弱}\\
     \end{array} \right. 
     $$
-    而对于折射光干涉情况，与上述恰好相反
+    而对于折射光干涉情况，其无$\frac{\lambda}{2}$的附加光程差，因此与上述恰好相反
     \begin{itemize}
         \item 增反膜：反射光增强
         \item 增透膜：透射光增强
@@ -1338,6 +1339,9 @@ $$
     r=\left\{ \begin{array}{l}
         \sqrt{\frac{\left( k-\frac{1}{2} \right) R\lambda}{n}},\text{明}\\
         \sqrt{\frac{kR\lambda}{n}},\text{暗}\\
+    \end{array} \right. \thickapprox \left\{ \begin{array}{l}
+        \sqrt{\left( k-\frac{1}{2} \right) R\lambda},\text{明}\\
+        \sqrt{kR\lambda},\text{暗}\\
     \end{array} \right. 
     $$
     若将平凸透镜上移，则条纹中心收缩，条纹间距不变，环心呈明暗交替变化
@@ -1345,7 +1349,7 @@ $$
     $$
     \Delta d=N\cdot\frac{\lambda}{2}
     $$
-    若$M_1$与$M_2$的距离为$d$增大，则干涉条纹从中心冒出并向外扩张，干涉条纹变密；若$d$减小，则干涉条纹向中心收缩，干涉条纹变稀
+    记$M_1$与$M_2$的距离为$d$，若$d$增大，则干涉条纹从中心冒出并向外扩张，干涉条纹变密；若$d$减小，则干涉条纹向中心收缩，干涉条纹变稀
     
     若插入折射率为$n$的介质片，则有
     $$
@@ -1390,8 +1394,8 @@ $$
     $$
     中央明纹最亮，各级明纹亮度随级数增大而减小
     
-    当$\theta$增大时，$k$增大，半波带面积减小，所含子波数减少，子波振幅减小。$\theta$越大，分成的波带数也就越多
-    \item {\sonti 圆孔衍射}：圆孔衍射图样是一系列明暗交替的同心圆环，中央是一个亮斑，称为艾里斑。若单色光博城为$\lambda$，圆孔直径为$D$，透镜的焦距为$f$，透镜光对焦平面上艾里斑的直径为$d$，所夹的平面角为$2\theta$，$\theta$为半角宽度，如\textcolor{blue}{\cref{fig:艾里斑}}所示。艾里斑的半角宽度满足下述关系：
+    当$\theta$增大时，$k$增大，半波带面积减小，所含子波数减少，子波振幅减小；$\theta$越大，分成的波带数也就越多
+    \item {\sonti 圆孔衍射}：圆孔衍射图样是一系列明暗交替的同心圆环，中央是一个亮斑，称为艾里斑。若单色光波长为$\lambda$，圆孔直径为$D$，透镜的焦距为$f$，透镜光对焦平面上艾里斑的直径为$d$，所夹的平面角为$2\theta$，$\theta$为半角宽度，如\textcolor{blue}{\cref{fig:艾里斑}}所示。艾里斑的半角宽度满足下述关系：
     $$
     \theta=\frac{\frac{d}{2}}{f}=\frac{1.22\cdot\lambda}{D}
     $$
@@ -1399,7 +1403,7 @@ $$
         \centerline{\includegraphics[scale=0.90]{艾里斑.pdf}}
         \caption{艾里斑}\label{fig:艾里斑}
     \end{figure}
-    当两物点在透镜焦平面上形成的两个艾里斑中心的距离等于每一个艾里斑的半径时，认为两个物点刚好能被人眼或光学仪器所能分辨，这一条件称为\textbf{瑞利}{\sonti （Rayleigh）}\textbf{判据}。按瑞利判据可求出光学仪器能分辨的两物点的最小距离，恰能分辨时，两物点在透镜处所张的角称为\textbf{最小分辨角}，用$\theta_0$表示，对应的正是艾里斑的半角宽度，如\textcolor{blue}{\cref{fig:瑞利判据}}所示
+    当两物点在透镜焦平面上形成的两个艾里斑中心的距离等于每一个艾里斑的半径时，认为两个物点刚好能被人眼或光学仪器所能分辨，这一条件称为\textbf{瑞利}{\sonti （}\textbf{Rayleigh}{\sonti ）}\textbf{判据}。按瑞利判据可求出光学仪器能分辨的两物点的最小距离。恰能分辨时，两物点在透镜处所张的角称为\textbf{最小分辨角}，用$\theta_0$表示，对应的正是艾里斑的半角宽度，如\textcolor{blue}{\cref{fig:瑞利判据}}所示
     \begin{figure}[H]
         \centerline{\includegraphics[scale=0.90]{瑞利判据.pdf}}
         \caption{瑞利判据}\label{fig:瑞利判据}
@@ -1439,18 +1443,18 @@ $$
     \textbf{缺级现象}：考虑单缝衍射的效果，因此有
     $$
     \left\{ \begin{array}{l}
-        \text{asin}\theta =\pm k'\lambda\\
+        a\sin\theta =\pm k'\lambda\\
         \left( a+b \right) \sin \theta =\pm k\lambda\\
-    \end{array}\Rightarrow \frac{a}{a+b}=\frac{k}{k'} \right. 
+    \end{array}\Rightarrow \frac{a+b}{a}=\frac{k}{k'} \right. 
     $$
     当多束干涉的主极大位置恰好为单缝衍射的暗纹中心时，这些主极大将在屏上消失，该现象称为缺级现象。由上式可以得出，当$\left(a+b\right)$与$a$的比为整数时，便有缺级现象
 \end{itemize}
 \section{光的偏振}
 \textbf{只有横波才有偏振现象}
 
-{\sonti 光振动的表示}：为简明地表示光的传播，常用于传播方向垂直的短线和点子分别表示在纸面内和垂直于纸面的光振动
+{\sonti 光振动的表示}：为简明地表示光的传播，常用与传播方向垂直的短线和点分别表示在纸面内和垂直于纸面的光振动
 
-{\sonti 自然光}：普通光源中各原子发光是独立的，每个波列的振幅、相位和振动方向都是随机的。光矢量具有均匀的轴对称分布，各方向光矢量振动的振幅相同。自然光并不能显示出偏振特性，这是由于光波的偏振性在每个方向都不占优势。其表示如\textcolor{blue}{\cref{fig:自然光}}所示
+{\sonti 自然光}：普通光源中各原子发光是独立的，每个波列的振幅、相位和振动方向都是随机的。光矢量具有均匀的轴对称分布的性质，各方向光矢量振动的振幅相同。自然光并不能显示出偏振特性，这是由于光波的偏振性在每个方向都不占优势。其表示如\textcolor{blue}{\cref{fig:自然光}}所示
 \begin{figure}[H]
     \centerline{\includegraphics[scale=1.2]{自然光}}
     \caption{自然光的表示}
@@ -1480,7 +1484,7 @@ $$
 
 设自然光光矢量的光强为$I_0$，经过起偏器后，透过的光为线偏振光，其光强为$\frac{1}{2}I_0$
 
-{\sonti 马吕斯定律}：设入射偏振光的光矢量为$A_1$，以$I_1$表示入射线偏振光的光强，振动方向与偏振片的偏振光方向成$\theta$角，透过检偏器后的光强为$I$，透过偏振片后光矢量振幅为$A$，则
+{\sonti 马吕斯定律}：设入射偏振光的光矢量振幅为$A_1$，以$I_1$表示入射线偏振光的光强，振动方向与偏振片的偏振光方向成$\theta$角，透过检偏器后的光强为$I$，透过偏振片后光矢量振幅为$A$，则
 $$
 A=A_1\cos\theta
 $$
@@ -1489,7 +1493,7 @@ $$
 I=I_1\cos^2\theta
 $$
 \begin{example}
-    自然光通过两个偏振化方向间成$\frac{\pi}{3}$角的偏振片，透射光强为$I$，现在这两块偏振片之间再插入另一偏振片，它的偏振化方向与上述两个偏振片均成$\frac{\pi}{3}$角，求透射光光强。
+    自然光通过两个偏振化方向间成$\frac{\pi}{3}$的偏振片，透射光强为$I$，现在这两块偏振片之间再插入另一偏振片，它的偏振化方向与上述两个偏振片均成$\frac{\pi}{6}$，求透射光光强。
 
     \noindent\textbf{解}
 
@@ -1500,16 +1504,16 @@ $$
 
     因此入射光光强
     $$
-    I_0=\left(\frac{1}{2}\right)^2\times2I=8I
+    I_0=\frac{1}{\left(\frac{1}{2}\right)^2}\times2I=8I
     $$
 
-    因此插入另一个偏振片后，投射光光强为
+    因此插入另一个偏振片后，透射光光强为
     $$
     I'=\frac{1}{2}I_0 \cos^2\frac{\pi}{6}\cdot\cos^2\frac{\pi}{6}=\frac{1}{2}\times8I\times\left(\frac{\sqrt{3}}{2}\right)^2\times\left(\frac{\sqrt{3}}{2}\right)^2=\frac{9}{4}I
     $$
 \end{example}
 
-{\sonti 反射和折射时光的偏振}
+{\sonti 反射和折射时光的偏振}：
 
 反射光、折射光一般不再为自然光，而是部分偏振光
 
@@ -1581,11 +1585,11 @@ $$
 
 {\sonti 标准状态}：$p_0=1.013\times 10^5\,\mathrm{Pa}$，$T_0=273.15\,\mathrm{K}$
 
-在标准状态下，$1\mathrm{mol}$任何理想气体的体积均为$V_\mathrm{m}=22.4\,\mathrm{L}$
+在标准状态下，$1\,\mathrm{mol}$任何理想气体的体积均为$V_\mathrm{m}=22.4\,\mathrm{L}$
 
 {\sonti 摩尔气体常量}：
 $$
-R=\frac{p_0V_0}{T_0}=8.31\,\mathrm{J}\cdot\mathrm{mol}^{-1}\cdot\mathrm{K}^{-1}
+R=\frac{p_0V_\mathrm{m}}{T_0}=8.31\,\mathrm{J}\cdot\mathrm{mol}^{-1}\cdot\mathrm{K}^{-1}
 $$
 
 对于物质的量为$\nu$，总质量为$m'$，摩尔质量为$M$的气体，理想气体物态方程为
@@ -1621,15 +1625,12 @@ $$
 p=\frac{N}{V}kT=nkT
 $$
 \section{物质的微观模型、统计规律}
-物质结构的分子、原子学说：
+{\sonti 物质结构的分子、原子学说}：
 \begin{itemize}
     \item 一切宏观物体都是由大量分子或原子组成
     \item 分子间有力的相互作用
-    \item 分子永不停息地作无规则的热运动
+    \item 分子永不停息地做无规则的热运动
 \end{itemize}
-$$
-1\,\mathring{\mathrm{A}}=0.1\,\mathrm{nm}
-$$
 
 当系统在无外界作用时，处于平衡态下的气体密度是均匀的。大量分子沿空间各方向运动的机会相等，沿各方向运动的分子数相等，分子速度在各方向上分量的各种平均值也相等
 \section{理想气体的压强公式}
@@ -1649,7 +1650,7 @@ $$
 p=\frac{1}{3}nm\overline{v^2}=\frac{2}{3}n\left(\frac{1}{2}m\overline{v^2}\right)
 $$
 
-{\sonti 分子平均平动能}：
+{\sonti 分子平均平动动能}：
 $$
 \overline{\varepsilon_\mathrm{kt}}=\frac{1}{2}m\overline{v^2}
 $$
@@ -1660,7 +1661,7 @@ $$
 
 对于理想气体，有$\overline{\boldsymbol{v}}=0$
 
-分子数密度越大，分子的平均平动能就越大，压强也就越大
+分子数密度越大，分子的平均平动动能就越大，压强也就越大
 \section{理想气体的温度公式}
 由理想气体的物态方程和压强公式
 $$
@@ -1696,7 +1697,7 @@ $$
     \label{tab:FreeDegree}
 \end{table}
 
-{\sonti 能量均分定理}：在温度为$T$的平衡态下，气体分子任何一个自由度的平均动能都相等，均为$\frac{1}{2}kT$
+{\sonti 能量（按自由度）均分定理}：在温度为$T$的平衡态下，气体分子任何一个自由度的平均动能都相等，均为$\frac{1}{2}kT$
 
 气体分子的平均动能与平均平动动能、平均转动动能的关系为
 $$
@@ -1707,9 +1708,7 @@ $$
 \section{理想气体的内能}
 {\sonti 气体内能}=所有分子热运动的{\sonti 动能}+分子间相互作用的{\sonti 势能}
 
-{\sonti 理想气体的内能}=分子热运动的{\sonti 动能}
-
-这是由于理想气体分子间无相互作用力，即分子间无势能
+{\sonti 理想气体的内能}=分子热运动的{\sonti 动能}，这是由于\textbf{理想气体分子间无相互作用力}，\textbf{即分子间无势能}
 
 {\sonti 理想气体的内能}：
 $$
@@ -1725,23 +1724,23 @@ $$
 $$
 f\left(v\right)=\frac{1}{N}\frac{\mathrm{d}N}{\mathrm{d}v}
 $$
-表示在速率$v$附近单位速率区间内的分子数占总分子数的百分比；也可表述为任一单个分子在速率$v$附近单位速率区间内出现的概率，因此$f\left(v\right)$又称概率密度
+表示在速率$v$附近单位速率区间内的分子数占总分子数的百分比；也可表述为任意单个分子在速率$v$附近单位速率区间内出现的概率，因此$f\left(v\right)$又称概率密度
 
 速率分布曲线下微元面积为
 $$
 f\left(v\right)\mathrm{d}v=\frac{\mathrm{d}N}{N}
 $$
-其表示速率$v$附近$\mathrm{d}v$区间内的分子数占总分子数的百分比。而介于$v_1$与$v_2$之间的分子数$\Delta N$占总分子数$N$的百分比，即速率分布曲线下$v_1$与$v_2$之间的面积为
+其表示速率$v$附近$\mathrm{d}v$区间内的分子数占总分子数的百分比。而介于$v_1$与$v_2$之间的分子数$\Delta N$占总分子数$N$的百分比为速率分布曲线下$v_1$与$v_2$之间的面积，即
 $$
 \frac{\Delta N}{N}=\int_{v_1}^{v_2}f\left(v\right)\mathrm{d}v
 $$
 
-速率分布曲线下面积为分布在$v=0$到$v=\infty$整个速率区间内的分子数全部百分比之和，显然该值为$1$，即
+速率分布曲线下的总面积为分布在$v=0$到$v=\infty$整个速率区间内的分子数全部百分比之和，显然该值为$1$，即
 $$
 \int_{0}^{\infty}f\left(v\right)\mathrm{d}v=1
 $$
 
-{\sonti 气体分子的速率分布函数的应用}：在$v_1$到$v_2$之间
+{\sonti 气体分子的速率分布函数的应用}：在$v_1$与$v_2$之间
 \begin{itemize}
     \item 分子数：$\int_{v_1}^{v_2}Nf\left(v\right)\mathrm{d}v=N\int_{v_1}^{v_2}f\left(v\right)\mathrm{d}v$
     \item 速率之和：$\int_{v_1}^{v_2}vNf\left(v\right)\mathrm{d}v=N\int_{v_1}^{v_2}vf\left(v\right)\mathrm{d}v$
@@ -1750,29 +1749,30 @@ $$
 
 {\sonti 麦克斯韦速率分布律}：
 $$
-\frac{\mathrm{d}N}{N}=f\left(v\right)\mathrm{d}v=4\pi\left(\frac{m}{2\pi kT}\right)^{\frac{3}{2}}v^2\mathrm{e}^{-\frac{mv^2}{2\pi kT}}\mathrm{d}v
+\frac{\mathrm{d}N}{N}=f\left(v\right)\mathrm{d}v=4\pi\left(\frac{m}{2\pi kT}\right)^{\frac{3}{2}}v^2\exp\left(-\frac{mv^2}{2kT}\right)\mathrm{d}v
 $$
 
 {\sonti 分子热运动的三种统计速率}：
 \begin{itemize}
-    \item {\sonti 方均根速率}：$v_\mathrm{r}=\sqrt{\overline{v^2}}$
+    \item \textbf{方均根速率}：$v_\mathrm{r}=\sqrt{\overline{v^2}}$
     $$
     v_\mathrm{r}=\sqrt{3}\sqrt{\frac{kT}{m}}=\sqrt{3}\sqrt{\frac{RT}{M}}
     $$
-    \item {\sonti （算数）平均速率}：$v_\mathrm{a}=\overline{v}$
+    \item {\sonti （}\textbf{算数}{\sonti ）}\textbf{平均速率}：$v_\mathrm{a}=\overline{v}$
     $$
     v_\mathrm{a}=\sqrt{\frac{8}{\pi}}\sqrt{\frac{kT}{m}}=\sqrt{\frac{8}{\pi}}\sqrt{\frac{RT}{M}}
     $$
-    \item {\sonti 最概然速率}：$v_\mathrm{p}$，为$f\left(v\right)$的极大值
+    \item \textbf{最概然速率}：$v_\mathrm{p}=f\left(v\right)_\mathrm{max}$
     $$
     v_\mathrm{p}=\sqrt{2}\sqrt{\frac{kT}{m}}=\sqrt{2}\sqrt{\frac{RT}{M}}
     $$
 \end{itemize}
+
 因此，三者的大小关系为$v_\mathrm{r}>v_\mathrm{a}>v_\mathrm{p}$
 \section{分子平均碰撞频率、平均自由程}
-{\sonti 分子平均碰撞频率}：$\overline{Z}$，表示一个分子每秒内与其他分子平均碰撞的次数
+{\sonti 分子平均碰撞频率}：$\overline{Z}$，表示某个分子每秒内与其他分子平均碰撞的次数
 
-{\sonti 平均自由程}：$\overline{\lambda}$，表示每两次碰撞之间一个分子自由运动的平均路程
+{\sonti 平均自由程}：$\overline{\lambda}$，表示每两次碰撞之间某个分子自由运动的平均路程
 
 两者有如下关系：
 $$
@@ -1820,15 +1820,15 @@ $$
 
 {\sonti 内能}：内能是状态量，用$E$表示
 
-理想气体的内能仅是\textbf{温度}的函数，由于$E=\frac{i}{2}\nu RT$
+系统内能的改变完全取决于系统的始末状态，与过程无关，即$\Delta E=E_2-E_1$
 
 内能=动能+势能
 
-系统内能的改变完全取决于系统的始末状态，与过程无关，$\Delta E=E_2-E_1$
+对于理想气体（压强不太大，温度不太低）而言，其分子间无相互作用力，因此内能仅由分子动能决定，则$E=\frac{i}{2}\nu RT$，因此理想气体的内能仅是\textbf{温度}的函数
 
-对于理想气体（压强不太大，温度不太低）而言，其内能仅有分子动能决定，由于理想气体分子间无相互作用力，$E=\frac{i}{2}\nu RT$
+{\sonti 热量}：热量是过程量，用$Q$表示
 
-{\sonti 热量}：热量是过程量，用$Q$表示，传热过程中传递的能量称为热量
+传热过程中传递的能量称为热量
 
 若需要改变系统的状态或者内能，需要\textbf{对系统做功}或者\textbf{向气体传递热量}
 \section{热力学第一定律}
@@ -1913,7 +1913,6 @@ C_\mathrm{m}=\frac{\mathrm{d}Q}{\nu \mathrm{d}T}=\frac{\mathrm{d}E+p\mathrm{d}V}
 $$
 
 {\sonti 理想气体的摩尔定容热容}：
-
 $$
 \mathrm{d}V=0 \Rightarrow \mathrm{d}W=p\mathrm{d}V=0
 $$
@@ -1933,7 +1932,7 @@ $$
 \mathrm{d}p=0 \Rightarrow V\mathrm{d}p=0 \Rightarrow p\mathrm{d}V=\nu R\mathrm{d}T
 $$
 $$
-C_{p,\mathrm{m}}=\frac{\mathrm{Q}_p}{\nu \mathrm{d}T}=\frac{\mathrm{d}E+p\mathrm{d}V}{\nu \mathrm{d}T}=\frac{\frac{i}{2} \nu R\mathrm{d}T+\nu R\mathrm{d}T}{\nu \mathrm{d}T}
+C_{p,\mathrm{m}}=\frac{\mathrm{d}Q_p}{\nu \mathrm{d}T}=\frac{\mathrm{d}E+p\mathrm{d}V}{\nu \mathrm{d}T}=\frac{\frac{i}{2} \nu R\mathrm{d}T+\nu R\mathrm{d}T}{\nu \mathrm{d}T}
 $$
 $$
 C_{p,\mathrm{m}}=\frac{i}{2}R+R=C_{V,\mathrm{m}}+R
@@ -1981,14 +1980,14 @@ $$
 
 在$p-V$图中，顺时针方向进行的为正循环，即热机；逆时针方向进行的为逆循环，即制冷机
 
-{\sonti 正循环}：
+{\sonti 正循环与热机}：
 \begin{figure}[H]
     \centerline{\includegraphics[scale=1.2]{正循环与热机能流图.pdf}}
     \caption{正循环与热机能流图}\label{fig:正循环与热机能流图}
 \end{figure}
 \hspace*{2em}{\sonti 热机效率}：$\eta=\frac{W}{Q_1}=\frac{Q_1-Q_2}{Q_1}=1-\frac{Q_2}{Q_1}$
 
-{\sonti 逆循环}：
+{\sonti 逆循环与制冷机}：
 \begin{figure}[H]
     \centerline{\includegraphics[scale=1.2]{逆循环与制冷机能流图.pdf}}
     \caption{逆循环与制冷机能流图}\label{fig:逆循环与制冷机能流图}
@@ -2041,7 +2040,7 @@ $$
 \Delta S>0
 $$
 
-若孤立系统经历的是可逆过程，则意味着过程中任意两个状态的热力学概率都相等，因而熵保持不变，有$\Delta S=0$，结合上述，有$\Delta S \geqslant 0$，它表明：\textbf{孤立系统内无论进行什么过程，系统的熵永不减少}
+若孤立系统经历的是可逆过程，则意味着过程中任意两个状态的热力学概率都相等，因而熵保持不变，有$\Delta S=0$，结合上述，有$\Delta S \geqslant 0$，它表明：\textbf{孤立系统内无论进行什么过程}，\textbf{系统的熵永不减少}
 \chapter{静电场}
 \newpage
 \section{电荷}
@@ -2049,7 +2048,7 @@ $$
 
 用丝绢摩擦玻璃棒之后，失去电子的玻璃棒带正电，获得电子的丝绢带负电
 
-{\sonti 电荷的量子化}
+{\sonti 电荷的量子化}：
 
 电子的比荷（核质比）为$\frac{e}{m}$
 
@@ -2059,7 +2058,7 @@ $$
 \section{库仑定律}
 {\sonti 点电荷}：带电体的线度与其他有关长度相比可忽略不计，即带电体可以看作只有电荷的几何点。点电荷为物理模型，实际上不存在
 
-{\sonti 库仑定律}：同号电荷相斥，异号电荷相吸。静止电荷之间的作用力称作库仑力
+{\sonti 库仑定律}：同号电荷相斥，异号电荷相吸。静止电荷之间的作用力称作\textbf{库仑力}
 $$
 \boldsymbol{F}=\frac{1}{4\pi \varepsilon _0}\frac{q_1q_2}{r^2}\boldsymbol{e}_r
 $$
@@ -2067,6 +2066,7 @@ $$
 $$
 \varepsilon _0=8.85\times 10^{-12}\,\mathrm{C}^2\cdot\mathrm{N}^{-1}\cdot\mathrm{m}^{-2}
 $$
+
 此外，有
 $$
 \frac{1}{4\pi \varepsilon _0}=9.0\times10^{9}\,\mathrm{C}^{-2}\cdot\mathrm{N}\cdot\mathrm{m}^{2}
@@ -2076,9 +2076,9 @@ $$
 \section{电场强度}
 由静止电荷所激发的电场称为静电场，该电荷称为场源电荷。静电场是电磁场的一种特殊形态，电磁场与实物物质一样具有能量、质量、动量等
 
-{\sonti 试验电荷}：需要满足两个条件，电荷量足够小；几何线度足够小
+{\sonti 试验电荷}：需要满足两个条件，\textbf{电荷量足够小}以及\textbf{几何线度足够小}
 
-{\sonti 电场强度}：$\boldsymbol{E}=\frac{\boldsymbol{F}}{q_0}$，$\mathrm{N}\cdot\mathrm{C}^{-1}$或$\mathrm{V}\cdot\mathrm{m}^{-1}$
+{\sonti 电场强度}：$\boldsymbol{E}=\frac{\boldsymbol{F}}{q_0}$，单位为$\mathrm{N}\cdot\mathrm{C}^{-1}$或$\mathrm{V}\cdot\mathrm{m}^{-1}$
 
 只要有电荷存在，就有电场存在，电场是客观存在的。电场强度是空间位置的函数
 
@@ -2100,7 +2100,7 @@ $$
 $$
 
 \begin{example}
-    一均匀带电的细棒，长度为$L$，电荷线密度为$\lambda$，求在细棒中垂线上与细棒距离为$a$的场点处的电场强度。{\sonti （仅需记住结论即可）}
+    一均匀带正电的细棒，长度为$L$，电荷线密度为$\lambda$，求在细棒中垂线上与细棒距离为$a$的场点处的电场强度。{\sonti （仅需记住结论即可）}
     \begin{figure}[H]
         \centerline{\includegraphics[scale=0.8]{CH09EX01.pdf}}
     \end{figure}
@@ -2208,28 +2208,26 @@ $$
     $$
 \end{example}
 \section{电场线、电场强度通量}
-{\sonti 电场线}为假想曲线，曲线上每一点的切线方向都与该点的场强方向一致。其起始于正电荷或无穷远，终止于负电荷或无穷远；任意两条电场线不会相交。电场线越密处，场强越大
+{\sonti 电场线}为假想曲线，曲线上每一点的切线方向都与该点的场强方向一致。其起始于正电荷或无穷远，终止于无穷远或负电荷；任意两条电场线不会相交。电场线越密处，场强越大
 
 {\sonti 电场线数密度}：$\frac{n}{\mathrm{d}S}$
 
 {\sonti 电场强度通量（标量）}：$\varPhi_\mathrm{e}$
 \section{高斯定理}
-在真空中，通过任一闭合曲面（该闭合曲面称为{\sonti 高斯面}）的电场强度通量，等于该曲面内所包围的所有电荷的代数和除以$\varepsilon_0$。\textbf{[这里为了写法简洁清晰，可写为一重积分号]}
+在真空中，通过任意闭合曲面（该闭合曲面称为{\sonti 高斯面}）的电场强度通量，等于该曲面内所包围的所有电荷的代数和除以$\varepsilon_0$。\textbf{[这里及后文为了写法简洁清晰，故写为一重积分号]}
 $$
-\varPhi_\mathrm{e}=\varoiint \boldsymbol{E}\cdot\mathrm{d}\boldsymbol{S}=\oint_S \boldsymbol{E}\cdot\mathrm{d}\boldsymbol{S}=\frac{1}{\varepsilon_0}\sum_{\text{内}}q_i
+\varPhi_\mathrm{e}=\varoiint_S \boldsymbol{E}\cdot\mathrm{d}\boldsymbol{S}=\oint_S \boldsymbol{E}\cdot\mathrm{d}\boldsymbol{S}=\frac{1}{\varepsilon_0}\sum_{\text{内}}q_i
 $$
 
 若高斯面内无点电荷，必有穿入高斯面的电场线数量=穿出高斯面的电场线数量
 
-穿入的电场强度通量是负值，穿出的电场强度通量是正值
-
-电场强度通量$\varPhi$只有面内电荷有关，与面外电荷无关
+电场强度通量$\varPhi_\mathrm{e}$只与面内电荷有关，与面外电荷无关
 
 $E$为高斯面上某点的电场强度，由空间所有电荷产生，与面内外电荷均有关
 
-$\varPhi=0$，不一定面内无电荷，有可能面内电荷等量异号
+$\varPhi_\mathrm{e}=0$，不一定面内无电荷，有可能面内电荷等量异号
 
-$\varPhi=0$，不一定高斯面上各点的电场强度均为0
+$\varPhi_\mathrm{e}=0$，不一定高斯面上各点的电场强度均为0
 
 高斯定理说明电场是有源场，也是无旋场
 
@@ -2239,17 +2237,17 @@ $\varPhi=0$，不一定高斯面上各点的电场强度均为0
 
 静电力是保守力，静电场是保守场，无旋场。无旋场一定是保守场
 
-{\sonti 静电场的环路定理}：在静电场中，电场强度沿任一闭合路径的线积分为零
+{\sonti 静电场的环路定理}：在静电场中，电场强度沿任意闭合路径的线积分为零
 $$
-\oint \boldsymbol{E}\cdot\mathrm{d}\boldsymbol{l}=0
+\oint_l \boldsymbol{E}\cdot\mathrm{d}\boldsymbol{l}=0
 $$
 \section{电势}
-{\sonti 电势能}是一个相对的量，需要选择一个零点势能参考点，对于有限带电体，一般选无限远处$E_{\mathrm{p}\infty}=0$
+{\sonti 电势能}是一个相对的量，需要选择一个零点势能参考点，对于有限带电体，一般选择无限远处$E_{\mathrm{p}\infty}=0$
 $$
 W_{ab}=q_0\int_{a}^{b} \boldsymbol{E}\cdot\mathrm{d}\boldsymbol{l}=-\left(E_{\mathrm{p}b}-E_{\mathrm{p}a}\right)=E_{\mathrm{p}a}-E_{\mathrm{p}b}
 $$
 
-试验电荷$q_0$在电场中$a$点的电势能等于将$q_0$由$a$点移至电势能零点时，电场力所做的功
+试验电荷$q_0$在电场中的$a$点处的电势能等于将$q_0$由$a$点移至电势能零点时，电场力所做的功
 
 {\sonti 电势（标量）}：
 $$
@@ -2257,12 +2255,12 @@ V_a=\frac{E_{\mathrm{p}a}}{q_0}=\int_{a}^{b} \boldsymbol{E}\cdot\mathrm{d}\bolds
 $$
 单位为$\mathrm{J}\cdot\mathrm{C}^{-1}$，以$\mathrm{V}$表示
 
-对于有限带电体，通常取无穷远处电势为零，则
+对于有限带电体，通常取无穷远处电势为零，则上式写为
 $$
-V_a=\frac{E_{\mathrm{p}a}}{q_0}=\int_{a}^{\infty} \boldsymbol{E}\cdot\mathrm{d}\boldsymbol{l}
+V_a=\int_{a}^{\infty} \boldsymbol{E}\cdot\mathrm{d}\boldsymbol{l}
 $$
 
-{\sonti 电势差}：$V_a-V_b$为$a$、$b$两点的电势差，以$U_{ab}$表示，有
+{\sonti 电势差}：$V_a-V_b$为$a$、$b$两点之间的电势差，以$U_{ab}$表示，有
 $$
 U_{ab}=V_a-V_b=\int_{a}^{\infty} \boldsymbol{E}\cdot\mathrm{d}\boldsymbol{l}-\int_{b}^{\infty} \boldsymbol{E}\cdot\mathrm{d}\boldsymbol{l}=\int_{a}^{b} \boldsymbol{E}\cdot\mathrm{d}\boldsymbol{l}
 $$
@@ -2283,7 +2281,7 @@ $$
 V=\int\mathrm{d}V=\int\frac{\mathrm{d}q}{4\pi\varepsilon_0r}
 $$
 \begin{example}
-    一均匀带电圆环，半径为$R$，电荷量为$q$，求其轴线上任一点电势。
+    一均匀带电圆环，半径为$R$，电荷量为$q$，求其轴线上任意一点的电势。
     
     \noindent\textbf{解}
     \begin{figure}[H]
@@ -2309,7 +2307,7 @@ $$
     $$
 \end{example}
 \begin{example}
-    一均匀带电球体，电荷体密度为$\rho$，半径为$R$，求球体内外任一点的电势。
+    一均匀带电球体，电荷体密度为$\rho$，半径为$R$，求球体内外任意一点的电势。
 
     \noindent\textbf{解}
     \begin{figure}[H]
@@ -2337,7 +2335,7 @@ $$
         $$
         所以有
         $$
-        4\pi r^2E_1=\frac{1}{\varepsilon_0}\int\rho\cdot4\pi r^2\mathrm{d}r
+        4\pi r^2E_1=\frac{1}{\varepsilon_0}\int_{0}^{r}\rho\cdot4\pi r^2\mathrm{d}r
         $$
         因此
         $$
@@ -2349,7 +2347,7 @@ $$
         $$
         又
         $$
-        4\pi r^2E_2=\frac{1}{\varepsilon_0}\int\rho\cdot4\pi R^2\mathrm{d}R
+        4\pi r^2E_2=\frac{1}{\varepsilon_0}\int_{0}^{R}\rho\cdot4\pi R^2\mathrm{d}R
         $$
         因此
         $$
@@ -2394,17 +2392,17 @@ $$
 
 {\sonti 静电感应现象}：在外电场作用下，引起导体中电荷重新分布而呈现的带电现象
 
-当导体内没有电荷作定向移动时，导体处于静电平衡状态
+当导体内没有电荷做定向移动时，导体处于静电平衡状态
 
-导体平衡后，导体内部以及导体表面无电荷作定向运动，此时导体表面电场强度方向与表面垂直
+导体平衡后，导体内部以及导体表面无电荷做定向运动，此时导体表面电场强度方向与表面垂直
 
-导体处于静电平衡状态时，必须满足：
+\textbf{导体处于静电平衡状态时}，\textbf{必须满足}：
 \begin{itemize}
     \item 导体内部电场强度处处为零
     \item 导体表面上的电场强度处处垂直于导体表面
 \end{itemize}
 
-处于静电平衡状态的导体具备以下的性质：
+\textbf{处于静电平衡状态的导体具备以下的性质}：
 \begin{itemize}
     \item 整个导体是等势体，导体表面是等势面，$U_{ab}=\int_{a}^{b}\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{l}=0$
     \item 导体内部不存在净电荷，电荷均分布在导体的表面上
@@ -2414,13 +2412,13 @@ $$
 
 曲率越大（弯曲程度越大）处，即尖端部分，表面电荷面密度越大；曲率越小处，表面电荷面密度越小。表面凹处，曲率为负，电荷面密度更小
 
-防止尖端放电，高压设备的电极做成光滑的球形。避雷针利用尖端放电原理
+防止尖端放电，高压设备的电极做成光滑的球形；避雷针利用尖端放电原理
 
 对于腔内没有带电体的空腔导体，导体空腔内表面上的电荷代数和为零
 
 腔内没有电荷的导体空腔在静电平衡时，其内表面没有电荷分布，空腔内没有电场，电势处处相等且等于导体的电势
 
-腔内有带电体的空腔导体，空腔内表面必定带有与腔内带电体等量异号的电荷。其带电情况如\textcolor{blue}{\cref{fig:空腔导体内有带电体带电情况}}所示
+腔内有带电体的空腔导体，空腔内表面必定带有与腔内带电体等量异号的电荷，其带电情况如\textcolor{blue}{\cref{fig:空腔导体内有带电体带电情况}}所示
 \begin{figure}[H]
     \centerline{\includegraphics[scale=1.0]{空腔导体内有带电体带电情况.pdf}}
     \caption{空腔导体内有带电体带电情况}\label{fig:空腔导体内有带电体带电情况}
@@ -2434,7 +2432,7 @@ $$
 C=\frac{q}{V}
 $$
 
-若在真空中，有一半径为$R$，带电为$q$的孤立导体球，选取无穷远为电势零点，则其电容为
+若在真空中，有一半径为$R$，带电量为$q$的孤立导体球，选取无穷远为电势零点，则其电容为
 $$
 C=\frac{q}{V}=\frac{q}{\frac{q}{4\pi\varepsilon_0R}}=4\pi\varepsilon_0R
 $$
@@ -2465,7 +2463,7 @@ $$
     $$
     C=\frac{q}{U_{AB}}=\frac{q}{\frac{qd}{\varepsilon_0S}}=\frac{\varepsilon_0S}{d}
     $$
-    \item {\sonti 球形电容器}：设内、外球壳的半径分别为$R_A$，$R_B$，内球壳带电荷量为$+q$，外球壳带电荷量为$-q$，如\textcolor{blue}{\cref{fig:球形电容器}}所示
+    \item {\sonti 球形电容器}：设内、外球壳的半径分别为$R_A$、$R_B$，内球壳带电荷量为$+q$，外球壳带电荷量为$-q$，如\textcolor{blue}{\cref{fig:球形电容器}}所示
     \begin{figure}[H]
         \centerline{\includegraphics[scale=0.8]{球形电容器.pdf}}
         \caption{球形电容器}\label{fig:球形电容器}
@@ -2486,13 +2484,13 @@ $$
     $$
     C=\frac{q}{U_{AB}}=\frac{q}{\frac{q}{4\pi\varepsilon_0}\left(\frac{1}{R_A}-\frac{1}{R_B}\right)}=\frac{4\pi\varepsilon_0R_AR_B}{R_B-R_A}
     $$
-    \item {\sonti 圆柱形电容器}：设两柱面半径分别为$R_A$，$R_B$，所带电荷量分别为$+q$，$-q$，圆柱高为$l$，除边缘外，电荷均匀分布在内、外两圆柱面上，如\textcolor{blue}{\cref{fig:圆柱形电容器}}所示
+    \item {\sonti 圆柱形电容器}：设两柱面半径分别为$R_A$、$R_B$，所带电荷量分别为$+q$，$-q$，圆柱高为$l$，除边缘外，电荷均匀分布在内、外两圆柱面上，如\textcolor{blue}{\cref{fig:圆柱形电容器}}所示
     \begin{figure}[H]
         \centerline{\includegraphics[scale=1.4]{圆柱形电容器.pdf}}
         \caption{圆柱形电容器}\label{fig:圆柱形电容器}
     \end{figure}
     $$
-    +q=\sigma S=\sigma\cdot2\pi R_Al=\sigma\cdot2\pi R_Al
+    +q=\sigma S=\sigma\cdot2\pi R_Al
     $$
     在两圆柱面之间，即$R_A<r<R_B$，由高斯定理，有
     $$
@@ -2512,13 +2510,13 @@ $$
     $$
 \end{itemize}
 \section{静电场中的电介质}
-{\sonti 电介质中的电场}
+{\sonti 电介质中的电场}：
 
-当电介质受到外电场$\boldsymbol{E}_0$作用而极化时，电介质端面出现极化电荷，计划电荷也会产生电场，为$\boldsymbol{E}'$。因此，电介质中的电场$\boldsymbol{E}$是外电场$\boldsymbol{E}_0$与电介质中的电场$\boldsymbol{E}'$的矢量和，即
+当电介质受到外电场$\boldsymbol{E}_0$的作用而极化时，电介质端面出现极化电荷，极化电荷也会产生电场，为$\boldsymbol{E}'$。因此，电介质中的电场$\boldsymbol{E}$是外电场$\boldsymbol{E}_0$与电介质中的电场$\boldsymbol{E}'$的矢量和，即
 $$
 \boldsymbol{E}=\boldsymbol{E}_0+\boldsymbol{E}'
 $$
-而又由于$\boldsymbol{E}'$与$\boldsymbol{E}_0$的反向，因此介质中电场强度的大小为
+而又由于$\boldsymbol{E}'$与$\boldsymbol{E}_0$反向，因此介质中电场强度的大小为
 $$
 E=E_0-E'
 $$
@@ -2534,14 +2532,14 @@ $$
 $$
 E=E_0-E'=\frac{\sigma_0-\sigma'}{\varepsilon_0}
 $$
-因此，电介质中的场强总是小于真空中的场强。
+因此，电介质中的场强总是小于真空中的场强
 
 两板之间的电场强度$\boldsymbol{E}$的值仅为真空时两板之间电场强度$\boldsymbol{E_0}$值的$\frac{1}{\varepsilon_{\mathrm{r}}}$倍，即
 $$
-E=\frac{E_0}{\varepsilon_{\mathrm{r}}},\varepsilon_{\mathrm{r}}>1
+E=\frac{E_0}{\varepsilon_{\mathrm{r}}}
 $$
 
-{\sonti 相对电容率（无量纲）}：$\varepsilon_{\mathrm{r}}$
+{\sonti 相对电容率（量纲为一）}：$\varepsilon_{\mathrm{r}}$，$\varepsilon_{\mathrm{r}}>1$
 
 极化电荷与自由电荷的关系为
 $$
@@ -2550,7 +2548,7 @@ $$
 
 {\sonti 电介质中的高斯定理}：
 
-设平行板电容器两极板上自由电荷面密度为$\pm\sigma_0$，两板之间充满相对电容率为$\varepsilon_{\mathrm{r}}$的各向同性电介质，电介质极化后端面出现极化电荷面密度为$\pm\sigma'$，作一底面积为$\Delta$的圆柱形高斯面，两底分别在电介质和导体板中，侧面与导体板垂直，如\textcolor{blue}{\cref{fig:电介质中的高斯定理}}所示。
+设平行板电容器两极板上自由电荷面密度为$\pm\sigma_0$，两板之间充满相对电容率为$\varepsilon_{\mathrm{r}}$的各向同性电介质，电介质极化后端面出现极化电荷，其面密度为$\pm\sigma'$，作一底面积为$\Delta$的圆柱形高斯面，两底分别在电介质和导体板中，侧面与导体板垂直，如\textcolor{blue}{\cref{fig:电介质中的高斯定理}}所示
 \begin{figure}[H]
     \centerline{\includegraphics[scale=1.0]{电介质中的高斯定理.pdf}}
     \caption{电介质中的高斯定理}\label{fig:电介质中的高斯定理}
@@ -2575,16 +2573,16 @@ $$
 $$
 \oint_S \varepsilon\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{S}=q_0
 $$
-记$\boldsymbol{D}=\varepsilon\boldsymbol{E}$为电位移，其单位为$\mathrm{C}\cdot\mathrm{m}^{-2}$，于是得
+记$\boldsymbol{D}=\varepsilon\boldsymbol{E}$为电位移（在各向同性的电介质中才成立），其单位为$\mathrm{C}\cdot\mathrm{m}^{-2}$，于是得
 $$
 \oint_S \boldsymbol{D}\cdot\mathrm{d}\boldsymbol{S}=q_0
 $$
 
-上式即为\textbf{电介质中的高斯定理}，它表示：通过电介质中任一闭合曲面的电位移通量，等于该曲面内所包围的自由电荷的代数和
+上式即为\textbf{电介质中的高斯定理}，它表示：通过电介质中任意闭合曲面的电位移通量，等于该曲面内所包围的自由电荷的代数和
 
-{\sonti 电介质中静电场的计算}
+{\sonti 电介质中静电场的计算}：利用电介质中的高斯定理求解
 \begin{example}
-    在半径为$R$的金属球外，有一外半径为$R'$的同心均匀电介质层，其相对电容率为$\varepsilon_{\mathrm{r}}$，金属球电荷量为$Q$，求场强及电势的空间分布。
+    在半径为$R$的金属球外，有一外半径为$R'$的同心均匀电介质层，图中灰色部分，其相对电容率为$\varepsilon_{\mathrm{r}}$，金属球电荷量为$Q$，求场强及电势的空间分布。
     \begin{figure}[H]
         \centerline{\includegraphics[scale=1.0]{CH09EX06.pdf}}
     \end{figure}
@@ -2609,7 +2607,7 @@ $$
     $$
     E=\left\{ \begin{array}{l}
         0,r<R\\
-        \frac{Q}{4\pi r^2\varepsilon _0\varepsilon _{\text{r}}},R<r<R'\\
+        \frac{Q}{4\pi r^2\varepsilon _0\varepsilon _{\mathrm{r}}},R<r<R'\\
         \frac{Q}{4\pi r^2\varepsilon _0},r>R'\\
     \end{array} \right. 
     $$
@@ -2622,12 +2620,12 @@ $$
         $$
         \item 当$R<r<R'$时，设介质层中离球心为$r$处的电势为$V_2$，则有
         \begin{eqnarray}
-            V_2=\int_{r}^{R'}\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{r}+\int_{R'}^{\infty}\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{r} &=& \int_{r}^{R'}\frac{Q}{4\pi r^2\varepsilon _0\varepsilon _{\text{r}}}\mathrm{d}r+\int_{R'}^{\infty}\frac{Q}{4\pi r^2\varepsilon _0}\mathrm{d}r \nonumber \\
+            V_2=\int_{r}^{R'}\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{r}+\int_{R'}^{\infty}\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{r} &=& \int_{r}^{R'}\frac{Q}{4\pi r^2\varepsilon _0\varepsilon _{\mathrm{r}}}\mathrm{d}r+\int_{R'}^{\infty}\frac{Q}{4\pi r^2\varepsilon _0}\mathrm{d}r \nonumber \\
             ~&=& \frac{Q}{4\pi\varepsilon_0}\left[\frac{1}{\varepsilon_{\mathrm{r}}}\left(\frac{1}{r}-\frac{1}{R'}\right)+\frac{1}{R'}\right] \nonumber
         \end{eqnarray}
-        \item 当$r=R$时，设金属球的电势为$V_1$，则有
+        \item 由于金属球为等势体，不妨设设金属球的电势为$V_1$，则有
         \begin{eqnarray}
-            V_1=\int_{R}^{R'}\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{r}+\int_{R'}^{\infty}\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{r} &=& \int_{R}^{R'}\frac{Q}{4\pi r^2\varepsilon _0\varepsilon _{\text{r}}}\mathrm{d}r+\int_{R'}^{\infty}\frac{Q}{4\pi r^2\varepsilon _0}\mathrm{d}r \nonumber \\
+            V_1=\int_{R}^{R'}\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{r}+\int_{R'}^{\infty}\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{r} &=& \int_{R}^{R'}\frac{Q}{4\pi r^2\varepsilon _0\varepsilon _{\mathrm{r}}}\mathrm{d}r+\int_{R'}^{\infty}\frac{Q}{4\pi r^2\varepsilon _0}\mathrm{d}r \nonumber \\
             ~&=& \frac{Q}{4\pi\varepsilon_0}\left[\frac{1}{\varepsilon_{\mathrm{r}}}\left(\frac{1}{R}-\frac{1}{R'}\right)+\frac{1}{R'}\right] \nonumber
         \end{eqnarray}
     \end{itemize}
@@ -2635,26 +2633,26 @@ $$
 \section{静电场的能量}
 {\sonti 电容器所贮存的电能}：
 $$
-W_e=\frac{1}{2}CU^2
+W_\mathrm{e}=\frac{1}{2}CU^2
 $$
 由$C=\frac{Q}{U}$，可以得到
 $$
-W_e=\frac{Q^2}{2C}=\frac{1}{2}QU
+W_\mathrm{e}=\frac{1}{2}\frac{Q^2}{C}=\frac{1}{2}QU
 $$
 
 对于一般的静电场，电场能量为
 $$
-W_e=\frac{1}{2}\varepsilon E^2 Sd=\frac{1}{2}\varepsilon E^2 V
+W_\mathrm{e}=\frac{1}{2}\varepsilon E^2 Sd=\frac{1}{2}\varepsilon E^2 V
 $$
 
 {\sonti 电场能量密度}：
 $$
-w_e=\frac{W_e}{V}=\frac{1}{2}\varepsilon E^2
+w_\mathrm{e}=\frac{W_\mathrm{e}}{V}=\frac{1}{2}\varepsilon E^2
 $$
 
 对于非均匀电场，电场能量密度是随着场强变化的，电场总能量是电场能量密度的体积分，即
 $$
-W_e=\int_V w_e\mathrm{d}V=\int_V \frac{1}{2}\varepsilon E^2\mathrm{d}V
+W_\mathrm{e}=\int_V w_\mathrm{e}\mathrm{d}V=\int_V \frac{1}{2}\varepsilon E^2\mathrm{d}V
 $$
 \chapter{恒定磁场}
 \newpage
@@ -2681,13 +2679,13 @@ $$
 $$
 \mathrm{d}B=\frac{\mu_0}{4\pi}\frac{I\mathrm{d}l\cdot\sin\theta}{r^2}
 $$
-其中$\theta$为$I\mathrm{d}\boldsymbol{l}$与$\boldsymbol{e}_r$的夹角，$\mathrm{B}$的方向由$I\mathrm{d}\boldsymbol{l}$与$\boldsymbol{e}_r$的矢量叉乘确定，可见$\mathrm{d}B$垂直于$I\mathrm{d}\boldsymbol{l}$与$\boldsymbol{e}_r$所决定的平面；$\mu_0$为真空磁导率，其值为
+其中$\theta$为$I\mathrm{d}\boldsymbol{l}$与$\boldsymbol{e}_r$的夹角，$\mathrm{d}\boldsymbol{B}$的方向由$I\mathrm{d}\boldsymbol{l}$与$\boldsymbol{e}_r$的矢量叉乘确定，可见$\mathrm{d}\boldsymbol{B}$垂直于$I\mathrm{d}\boldsymbol{l}$与$\boldsymbol{e}_r$所决定的平面；$\mu_0$为真空磁导率，其值为
 $$
 \mu_0=4\pi\times10^{-7}\,\mathrm{N}\cdot\mathrm{A}^{-2}
 $$
 因此有
 $$
-\frac{\mu_0}{4\pi}=10^{-7}\,\mathrm{N}\cdot\mathrm{A}^{-2}
+\frac{\mu_0}{4\pi}=1.0\times10^{-7}\,\mathrm{N}\cdot\mathrm{A}^{-2}
 $$
 
 由于磁感应强度$\boldsymbol{B}$遵从磁场的叠加原理，因此有
@@ -2697,7 +2695,7 @@ $$
 
 {\sonti 运动电荷的磁场}：
 
-设电流元$I\mathrm{d}\boldsymbol{l}$的横截面面积为$S$，载流子（正电荷）的电荷量为$q$，单位体积内有$n$个做定向运动的载流子，它们速度运动均为矢量$\boldsymbol{v}$，则单位时间内通过横截面$S$的电荷量为$qnvS$，及电流强度为$I=qnvS$，电流元中共有$N=nS\mathrm{d}l$个载流子，且忽略电流元内各载流子到$P$点矢径$r$的差异，则每个运动载流子在$P$点激发的磁场为
+设电流元$I\mathrm{d}\boldsymbol{l}$的横截面面积为$S$，载流子（正电荷）的电荷量为$q$，单位体积内有$n$个做定向运动的载流子，它们的运动速度均为常矢量$\boldsymbol{v}$，则单位时间内通过横截面$S$的电荷量为$qnvS$，即电流强度为$I=qnvS$，电流元中共有$N=nS\mathrm{d}l$个载流子，且忽略电流元内各载流子到$P$点矢径$r$的差异，则每个运动载流子在$P$点激发的磁场为
 $$
 \boldsymbol{B}=\frac{\mathrm{d}\boldsymbol{B}}{N}=\frac{1}{nS\mathrm{d}l}\frac{\mu_0}{4\pi}\frac{qnS\mathrm{d}l\boldsymbol{v}\times\boldsymbol{e}_r}{r^2}
 $$
@@ -2721,7 +2719,7 @@ $$
     $$
     B=\frac{\mu_0I}{2\pi r}
     $$
-    \item \textbf{载流圆线圈轴线上的磁场}：设载流圆线圈半径为$R$，通有电流$I$，$P$点为其轴线上任意一点，它与圆心距离为$x$，如\textcolor{blue}{\cref{fig:载流圆线圈轴线上的磁场}}所示，则$P$处的磁感应强度大小为
+    \item \textbf{载流圆线圈轴线上的磁场}：设载流圆线圈半径为$R$，通有电流$I$，$P$点为其轴线上任意一点，它与圆心的距离为$x$，如\textcolor{blue}{\cref{fig:载流圆线圈轴线上的磁场}}所示，则$P$处的磁感应强度大小为
     $$
     B=\frac{\mu_0I R^2}{2\left(R^2+x^2\right)^{\frac{3}{2}}}
     $$
@@ -2730,13 +2728,13 @@ $$
         \caption{载流圆线圈轴线上的磁场}
         \label{fig:载流圆线圈轴线上的磁场}
     \end{figure}
-    当$x=0$时，在线圈中线点$O$的磁感应强度大小为
+    当$x=0$时，在线圈中心点$O$的磁感应强度大小为
     $$
     B=\frac{\mu_0 I}{2R}
     $$
     一般地，一段圆弧在圆心处的磁感应强度大小为
     $$
-    B=\frac{\mu_0 I}{2r}\frac{\varphi}{2\pi}
+    B=\frac{\mu_0 I}{2R}\frac{\varphi}{2\pi}
     $$
     其中$\varphi$为圆弧的弧度制角度
     \item \textbf{载流直螺线管轴线上的磁场}：设螺线管长为$L$，半径为$R$，线圈是密绕的，总匝数为$N$，则定义匝密度为$n=\frac{N}{L}$，即单位长度上绕有$n$匝线圈，同时通有电流$I$，$P$点为其轴线上任意一点，如\textcolor{blue}{\cref{fig:载流直螺线管轴线上的磁场}}所示，则$P$处的磁感应强度大小为
@@ -2758,12 +2756,14 @@ $$
     $$
 \end{itemize}
 \begin{example}
-    一根载流导线弯成如图平面曲线，其拐弯部分为半圆形，两直线平行并分别在$a$，$b$两点与半圆相切，已知导线中电流强度为$I$，且流向在图中已标出，圆半径为$R$，直线部分长度远大于$R$，求圆心$O$处的磁感应强度。
+    一根载流导线弯成如图平面曲线，其拐弯部分为半圆形，两直线平行并分别在$a$，$b$两点与半圆相切，已知导线中电流强度为$I$，且流向在图中已标出，半圆的半径为$R$，直线部分长度远大于$R$，求圆心$O$处的磁感应强度。
     \begin{figure}[H]
         \centerline{\includegraphics[scale=0.88]{CH10EX01.pdf}}
     \end{figure}
 
     \noindent\textbf{解}
+
+    由右手定则，可以判断出三部分产生的磁感应强度方向一致，均垂直于纸平面向内，因此有
     \begin{eqnarray}
         B &=&B_1+B_2+B_3 \nonumber \\
         ~&=& \frac{\mu_0I}{4\pi R}\left(\cos0-\cos\frac{\pi}{2}\right)+\frac{\mu_0I}{4\pi R}\left(\cos\frac{\pi}{2}-\cos\pi\right)+\frac{1}{2}\cdot\frac{\mu_0I}{2R} \nonumber \\
@@ -2773,14 +2773,10 @@ $$
     磁感应强度的方向为垂直于纸平面向内
 \end{example}
 \section{磁通量}
-{\sonti 磁感线}：
-
-磁感应线是一些有方向的曲线，磁感应线上任一点的切线方向与该电磁感应强度的方向相同；磁感应线的密度，即通过磁场中某地点处垂直于磁场方向的单位面积的磁感应线数目，等于该电磁感应强度的大
+{\sonti 磁感线}：磁感应线是一些有方向的曲线，磁感应线上任意一点的切线方向与该电磁感应强度的方向相同；磁感应线的密度，即通过磁场中某地点处垂直于磁场方向的单位面积的磁感应线数目，等于该电磁感应强度的大
 小。因此，磁场较强的地方，磁感线较密集，反之，磁感线较稀疏
 
-{\sonti 磁通量}：
-
-通过某一曲面的磁感线数目称为通过该曲面的磁通量，用$\varPhi_\mathrm{m}$表示
+{\sonti 磁通量}：通过某一曲面的磁感线数目称为通过该曲面的磁通量，用$\varPhi_\mathrm{m}$表示
 $$
 \varPhi_\mathrm{m}=\int_S \boldsymbol{B}\cdot\mathrm{d}\boldsymbol{S}
 $$
@@ -2949,7 +2945,7 @@ $\boldsymbol{B}$为环路上一点的磁感应强度，不是任意点的，其�
 
     且
     $$
-    I''=\frac{\pi\left(r^2-r_2^2\right)}{\pi\left(r_3^2-r_2^2\right)}=\frac{r^2-r_2^2}{r_3^2-r_2^2}I
+    I''=\frac{\pi\left(r^2-r_2^2\right)}{\pi\left(r_3^2-r_2^2\right)}I=\frac{r^2-r_2^2}{r_3^2-r_2^2}I
     $$
 
     因此有
@@ -2994,11 +2990,11 @@ $$
 \boldsymbol{F}=q\boldsymbol{v}\times\boldsymbol{B}
 $$
 
-因此$\boldsymbol{F}$称为\textbf{洛伦兹力}，其方向垂直于运动电荷的速度$\boldsymbol{v}$和感应强度$\boldsymbol{B}$所确定的平面，符合右手螺旋定则：以右手四指由$\boldsymbol{v}$经小于$\pi$的角弯向$\boldsymbol{B}$，此时，大拇指的指向就是正电荷所受洛伦兹力的方向
+$\boldsymbol{F}$称为\textbf{洛伦兹力}，其方向垂直于运动电荷的速度$\boldsymbol{v}$和感应强度$\boldsymbol{B}$所确定的平面，符合右手螺旋定则：以右手四指由$\boldsymbol{v}$经小于$\pi$的角弯向$\boldsymbol{B}$，此时，大拇指的指向就是正电荷所受洛伦兹力的方向
 
 {\sonti 带电粒子在磁场中的运动}：
 \begin{itemize}
-    \item \textbf{圆周运动}：设电荷量为$q$，质量为$m$的带电粒子，则其核质比为$\frac{q}{m}$，以初速度$v$垂直进入磁感应强度为$B$的均匀磁场中，有
+    \item \textbf{圆周运动}：设电荷量为$q$，质量为$m$的带电粒子，则其核质比为$\frac{q}{m}$，以初速度$v$垂直进入磁感应强度大小为$B$的均匀磁场中，有
     $$
     qvB=m\frac{v^2}{R}
     $$
@@ -3012,7 +3008,7 @@ $$
     $$
     f=\frac{1}{T}=\frac{qB}{2\pi m}
     $$
-    \item \textbf{螺旋运动}：设电荷量为$+q$，质量为$m$的带电粒子，以与磁感应强度$\boldsymbol{B}$成$\theta$角的初速度$v$进入磁场，则粒子的合成运动的轨迹为一条螺旋线，螺旋线的半径为
+    \item \textbf{螺旋运动}：设电荷量为$+q$，质量为$m$的带电粒子，以与磁感应强度$\boldsymbol{B}$成$\theta$角的初速度$v$进入磁场，则粒子的合运动的轨迹为一条螺旋线，螺旋线的半径为
     $$
     R=\frac{mv_\bot}{qB}=\frac{mv\sin\theta}{qB}
     $$
@@ -3048,7 +3044,7 @@ $$
     $$
     因此
     $$
-    U_\mathrm{H}=\frac{I}{qnbd}Bd=\frac{1}{nq}\cdot\frac{IB}{d}=K\cdot\frac{IB}{d}
+    U_\mathrm{H}=\frac{I}{qnbd}Bb=\frac{1}{nq}\cdot\frac{IB}{d}=K\cdot\frac{IB}{d}
     $$
     其中，$K=\frac{1}{nq}$为霍尔系数，其仅与材料有关
 \end{itemize}
@@ -3058,10 +3054,10 @@ $$
 \boldsymbol{F}=\int\mathrm{d}\boldsymbol{F}=\int I\mathrm{d}\boldsymbol{l}\times\boldsymbol{B}
 $$
 
-任意形状的平面载流导线所受磁场力等于连接导体起点与终点的载流直导线受到的磁场力
+任意形状的平面载流导线所受磁场力等于连接导体起点与终点的载流直导线受到的磁场力，即计算有效长度
 
 \begin{example}
-    一载流直导线附近有一扇形线框，线框平面与直导线垂直，其相对位置如下图所示。设直导线中电流为$I_0$，扇形线框中的电流为$I$，电流流向如图；线框的两个弧形边分别与直电流相距$r_1$与$r_2$，求直电流对线框各边磁力。
+    一载流直导线附近有一扇形线框，线框平面与直导线垂直，其相对位置如下图所示。设直导线中电流为$I_0$，扇形线框中的电流为$I$，电流流向如图；线框的两个弧形边分别与直电流相距$r_1$与$r_2$，求直电流对线框各边作用的磁力。
     \begin{figure}[H]
         \centerline{\includegraphics[scale=0.8]{CH10EX06.pdf}}
     \end{figure}
@@ -3085,7 +3081,7 @@ $$
     
     上式$F_{da}$中负号表示其方向与$F_{bc}$相反
 
-    根据左手定则（或叉乘右手定则）可以确定$F_{bc}$方向垂直于纸面向外，$F_{da}$方向垂直于纸面向内
+    根据叉乘右手定则，或左手定则，可以确定$F_{bc}$方向垂直于纸面向外，$F_{da}$方向垂直于纸面向内
 \end{example}
 \begin{example}
     在无限长载流直导线$I_1$旁，垂直放置另一长为$L$的载流直导线$I_2$，其左端与$I_1$的距离为$R$，求导线$I_2$所受到的安培力。
@@ -3097,7 +3093,7 @@ $$
     
     由于载流直导线$I_1$无限长，因此有
     $$
-    \mathrm{d}B=\frac{\mu_0I_1}{2\pi r}\mathrm{d}r
+    B=\frac{\mu_0I_1}{2\pi r}
     $$
 
     则
@@ -3110,17 +3106,17 @@ $$
     F=\int_{R}^{R+L}\frac{\mu_0I_1I_2}{2\pi}r\mathrm{d}r=\frac{\mu_0I_1I_2}{2\pi}\ln\frac{R+L}{R}
     $$
     
-    方向为垂直于$L$，在纸平面内向上
+    安培力方向垂直于$I_2$，在纸平面内向上
 \end{example}
 
-{\sonti 磁场作用于载流线圈的磁力矩}：定义$IS\boldsymbol{e}_\mathrm{n}=\boldsymbol{m}$为线圈的\textbf{磁矩}，即其大小为$IS$，方向为线圈的正法线$\boldsymbol{e}_\mathrm{n}$的方向，因此可写为矢量式
+{\sonti 磁场作用于载流线圈的磁力矩}：定义$IS\boldsymbol{e}_\mathrm{n}=\boldsymbol{m}$为线圈的\textbf{磁矩}，即其大小为$IS$，方向为线圈的正法线$\boldsymbol{e}_\mathrm{n}$的方向，因此磁力矩可写为矢量式，即
 $$
 \boldsymbol{M}=\boldsymbol{m}\times\boldsymbol{B}
 $$
 
 当$\boldsymbol{m}$的方向与$\boldsymbol{B}$的方向之间夹角为$\theta=\frac{\pi}{2}$时，线圈受到的磁力矩最大；当$\theta=0$或$\pi$时，线圈受到的磁力矩为零。但当$\theta=0$时，线圈处于稳定平衡状态；当$\theta=\pi$时，线圈处于非稳定平衡状态，这时，它稍受扰动，就会在磁力矩的作用下发生转动，直到$\boldsymbol{m}$与$\boldsymbol{B}$方向一致
 
-任意形状的载流平面线圈在均匀磁场中所受合磁力为零，但要受到磁力矩$\boldsymbol{M}=\boldsymbol{m}\times\boldsymbol{B}$的作用，该磁力矩总是力图使线圈的磁矩$\boldsymbol{m}$方向转动到$\boldsymbol{B}$的方向上来
+任意形状的载流平面线圈在均匀磁场中所受合磁力为零，但要受到磁力矩$\boldsymbol{M}=\boldsymbol{m}\times\boldsymbol{B}$的作用，该磁力矩总是力图使线圈的磁矩$\boldsymbol{m}$方向转动到磁场$\boldsymbol{B}$的方向上来
 
 \section{磁场中的介质}
 {\sonti 磁介质}：一切能够被磁化的物质被称为\textbf{磁介质}
@@ -3138,7 +3134,7 @@ $$
 $$
 \boldsymbol{B}=\mu_\mathrm{r}\boldsymbol{B}_0
 $$
-其中，$\mu_\mathrm{r}$为磁介质的\textbf{相对磁导率}，量纲为一，对于顺磁质$\mu_\mathrm{r}>1$；对于抗磁质$\mu_\mathrm{r}<1$，但无论是顺磁质还是抗磁质，其$\mu_\mathrm{r}$非常接近于$1$，而铁磁质的$\mu_\mathrm{r}$可以非常大
+其中，$\mu_\mathrm{r}$为磁介质的\textbf{相对磁导率}，量纲为一。对于顺磁质$\mu_\mathrm{r}>1$；对于抗磁质$\mu_\mathrm{r}<1$，但无论是顺磁质还是抗磁质，其$\mu_\mathrm{r}$非常接近于$1$，而铁磁质的$\mu_\mathrm{r}$可以非常大
 
 定义$\mu=\mu_0\mu_\mathrm{r}$为磁介质的绝对磁导率，简称为\textbf{磁导率}，可以将真空视为磁介质的特例，其相对磁导率为$1$，因此真空磁导率即为$\mu_0$，磁导率的单位为$\mathrm{H}\cdot\mathrm{m}^{-1}$或$\mathrm{N}\cdot\mathrm{A}^{-2}$
 
@@ -3152,9 +3148,9 @@ $$
 $$
 \oint_l \boldsymbol{H}\cdot\mathrm{d}\boldsymbol{l}=\sum I_\mathrm{c}
 $$
-其表明，在磁场中沿任一闭合回路，$\boldsymbol{H}$的环流等于穿过该闭合回路的传导电流的代数和
+其表明，在磁场中沿任意闭合回路，$\boldsymbol{H}$的环流等于穿过该闭合回路的传导电流的代数和
 \begin{example}
-    螺绕环中心周长为$L=10\,\mathrm{cm}$，环上均匀密绕线圈$200$匝，线圈中通过电流为$0.1\mathrm{A}$
+    螺绕环中心周长为$L=10\,\mathrm{cm}$，环上均匀密绕线圈$200$匝，线圈中通过电流$0.1\mathrm{A}$
 
     (1)当管内为真空时，求管中心的磁场强度$H$和磁感应强度$B_0$；
 
@@ -3171,7 +3167,7 @@ $$
 
     因此
     $$
-    H=\frac{HI}{L}=\frac{200\times100\times0.1}{0.1}\,\mathrm{A}\cdot\mathrm{m}^{-1}=200\,\mathrm{A}\cdot\mathrm{m}^{-1}
+    H=\frac{NI}{L}=\frac{200\times0.1}{0.1}\,\mathrm{A}\cdot\mathrm{m}^{-1}=200\,\mathrm{A}\cdot\mathrm{m}^{-1}
     $$
     $$
     B_0=\mu_0 H=4\pi\times10^{-7}\times 200\,\mathrm{T}=2.5\times10^{-4}\,\mathrm{T}
@@ -3184,7 +3180,7 @@ $$
 
     因此
     $$
-    H=\frac{HI}{L}=\frac{200\times100\times0.1}{0.1}\,\mathrm{A}\cdot\mathrm{m}^{-1}=200\,\mathrm{A}\cdot\mathrm{m}^{-1}
+    H=\frac{NI}{L}=\frac{200\times0.1}{0.1}\,\mathrm{A}\cdot\mathrm{m}^{-1}=200\,\mathrm{A}\cdot\mathrm{m}^{-1}
     $$
     $$
     B=\mu_0\mu_\mathrm{r}H=4\pi\times10^{-7}\times4200\times200\,\mathrm{T}=1.06\,\mathrm{T}
@@ -3270,7 +3266,7 @@ $$
 \section{感生电动势}
 将处于静止状态的导体或导体回路，由于内部磁场变化而产生的感应电动势称为\textbf{感生电动势}，其表达式为
 \begin{eqnarray}
-    \mathscr{E}_\mathrm{i}=\oint_l \boldsymbol{E}\cdot\mathrm{d}\boldsymbol{l}&=&-\frac{\mathrm{d}\varPhi_\mathrm{m}}{\mathrm{d}t} \nonumber \\
+    \mathscr{E}_\mathrm{i}=\oint_l \boldsymbol{E}_\mathrm{k}\cdot\mathrm{d}\boldsymbol{l}&=&-\frac{\mathrm{d}\varPhi_\mathrm{m}}{\mathrm{d}t} \nonumber \\
     ~&=&-\frac{\mathrm{d}}{\mathrm{d}t}\int_S\boldsymbol{B}\cdot\mathrm{d}\boldsymbol{S} \nonumber \\
     ~&=&-\int_S\frac{\mathrm{d}\boldsymbol{B}}{\mathrm{d}t}\cdot\mathrm{d}\boldsymbol{S} \nonumber
 \end{eqnarray}
@@ -3334,7 +3330,7 @@ $$
 \end{example}
 \section{自感与互感}
 \begin{itemize}
-    \item {\sonti 自感}：当回路中通有电流时，这一回路周围就有磁场存在，当回路中的电流发生变化时，通过回路自身的磁通量也将发生变化，从而在回路自身产生感应电动势。这种由于回路中的电流发生变化，而在自己回路中产生感应电动势的现象，称为\textbf{自感现象}，这样产生的感应电动势，称为\textbf{自感电动势}，用$\mathscr{E}_L$表示
+    \item {\sonti 自感}：当回路中通有电流时，这一回路周围就有磁场存在，当回路中的电流发生变化时，通过回路自身的磁通量也将发生变化，从而在回路自身中产生感应电动势。这种由于回路中的电流发生变化，而在自己回路中产生感应电动势的现象，称为\textbf{自感现象}，这样产生的感应电动势，称为\textbf{自感电动势}，用$\mathscr{E}_L$表示。通过回路的磁链为
     $$
     \varPsi=LI
     $$
@@ -3344,15 +3340,15 @@ $$
     $$
     \mathscr{E}_L=-\frac{\mathrm{d}\varPsi}{\mathrm{d}t}=-\frac{\mathrm{d}\left(LI\right)}{\mathrm{d}t}=-\left(L\frac{\mathrm{d}I}{\mathrm{d}t}+I\frac{\mathrm{d}L}{\mathrm{d}t}\right)
     $$
+    上式的负号表示自感电动势的方向总是反抗回路中的电流的变化
+
     当$L=\mathrm{const}$时，有$\frac{\mathrm{d}L}{\mathrm{d}t}=0$，因此
     $$
     \mathscr{E}_L=-L\frac{\mathrm{d}I}{\mathrm{d}t}
     $$
     其表明，当电流变化率相同时，自感系数$L$越大的回路，其自感电动势也越大
 
-    上式的负号表示自感电动势的方向总是反抗回路中的电流的变化
-
-    因此，任何回路中只要有电流的改变，就必将在回路中产生自感电动势，以反抗回路中电流的改变
+    任何回路中只要有电流的改变，就必将在回路中产生自感电动势，以反抗回路中电流的改变
     \item {\sonti 互感}：当一个线圈中的电流发生变化时，必定在邻近的另一个线圈中产生感应电动势，反之亦然，这种现象称为\textbf{互感现象}，由此产生的感应电动势称为\textbf{互感电动势}
     
     设有两个邻近的线圈$1$与线圈$2$，分别通有电流$I_1$与$I_2$，当线圈$1$中的电流发生变化时，线圈$2$中就会产生互感电动势，反之亦然。当线圈$1$中的电流发生变化时，由毕奥-萨伐尔定律可以确定它在回路$2$处所激发的磁感应强度$\boldsymbol{B}_1$与$I_1$成正比，因此通过回路$2$的磁链$\varPsi_{21}$也与$I_1$成正比，即
@@ -3400,11 +3396,11 @@ $$
 $$
 W_\mathrm{m}=\frac{1}{2}\frac{B^2}{\mu}V
 $$
-其中$V$为长直螺线管内部的空间的体积，其磁场能量密度为
+其中$V$为长直螺线管内部的空间的体积，因此磁场能量密度为
 $$
 w_\mathrm{m}=\frac{W_\mathrm{m}}{V}=\frac{1}{2}\frac{B^2}{\mu}=\frac{1}{2}BH
 $$
-上式可以证明为磁场能量密度的一般表达式，不限于长直螺线管这一特殊情况
+可以证明上式为磁场能量密度的一般表达式，不限于长直螺线管这一特殊情况
 
 体积元内磁场能量为
 $$
@@ -3451,10 +3447,10 @@ $$
 \section{电磁场基本方程的积分形式}
 {\sonti 麦克斯韦方程组的积分形式}：
 \begin{eqnarray}
-    \varoiint\boldsymbol{D}\cdot\mathrm{d}\boldsymbol{S}=q
+    \varoiint_S\boldsymbol{D}\cdot\mathrm{d}\boldsymbol{S}=q
 \end{eqnarray}
 \begin{eqnarray}
-    \oint\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{l}=-\iint_S\frac{\partial \boldsymbol{B}}{\partial t}\cdot\mathrm{d}\boldsymbol{S}
+    \oint_l\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{l}=-\iint_S\frac{\partial \boldsymbol{B}}{\partial t}\cdot\mathrm{d}\boldsymbol{S}
 \end{eqnarray}
 \begin{eqnarray}
     \varoiint_S\boldsymbol{B}\cdot\mathrm{d}\boldsymbol{S}=0
